@@ -38,12 +38,10 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ustackdocstheme'
-copyright = u'2017, OpenStack Developers'
+copyright = u'2019, William Huang'
 
 # openstackdocstheme options
 repository_name = 'docs/ustackdocstheme'
-bug_project = 'replace with the name of the project on Launchpad or the ID from Storyboard'
-bug_tag = ''
 html_last_updated_fmt = '%Y-%m-%d %H:%M'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
@@ -63,7 +61,7 @@ pygments_style = 'sphinx'
 # html_theme_path = ["."]
 # html_theme = '_theme'
 # html_static_path = ['static']
-html_theme = 'openstackdocs'
+html_theme = 'ustackdocs'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%sdoc' % project
