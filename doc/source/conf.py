@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     'openstackdocstheme',
-    #'sphinx.ext.intersphinx',
+    # 'sphinx.ext.intersphinx',
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -49,9 +49,11 @@ pygments_style = 'sphinx'
 # html_theme_path = ["."]
 # html_theme = '_theme'
 # html_static_path = ['static']
-html_theme = 'ustackdocs'
+
+# html_theme = 'ustackdocs'
 html_theme_options = {
     'analytics_tracking_code': False
 }
+html_theme = 'ustacktheme'
 
 # -- End options for HTML output ----------------------------------------------

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  {% include 'css.html' %}
+  <title>{{ theme_root_title|striptags }}: {{ title|striptags }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ metatags }}
+</head>
+<body>
+  {% include 'header.html' %}
+  {% include 'search.html' %}
+  <div class="container docs-book-wrapper">
+    <div class="row">
+      <div class="col-lg-9 col-md-8 col-sm-8 col-lg-push-3 col-md-push-4 col-sm-push-4">
+{% include 'titlerow.html' %}
+    <div class="row docs-byline">
+      <div class="docs-updated" style="float: right;">最新更新: {{ last_updated }}</div>
+    </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="docs-body" role="main">
+              {% block body %}{% endblock %}
+            </div>
+          </div>
+        </div>
+        {% include 'paging.html' %}
+      </div>
+      {% include 'sidebartoc.html' %}
+    </div>
+  </div>
+  {% include 'footer.html' %}
+  {% include 'script_footer.html' %}
+  {% block script_footer %}{% endblock %}
+</body>
+</html>
