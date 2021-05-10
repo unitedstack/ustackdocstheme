@@ -1,0 +1,20 @@
+footer {
+  background: #333333;
+  padding: 70px 0;
+}
+.footer-links h3 {
+  color: #fff;
+  font-size: 14px;
+}
+.footer-links li {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+  list-style: none;
+  margin-bottom: 5px;
+  width: 170px;
+}
+.footer-links .col-lg-2 ul li img {
+  height: 15px;
+  margin-right: 5px;
+}
