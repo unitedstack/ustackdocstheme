@@ -29,7 +29,7 @@ project = u'ustackdocstheme'
 copyright = u'2019, William Huang'
 
 # ustackdocstheme options
-repository_name = 'docs/ustackdocstheme'
+openstackdocs_repo_name = 'unitedstack/ustackdocstheme'
 html_last_updated_fmt = '%Y-%m-%d %H:%M'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
