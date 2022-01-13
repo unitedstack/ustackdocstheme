@@ -1,1 +1,1 @@
-sphinx>=3,<4 # BSD
+sphinx>=3 # BSD
